@@ -10,5 +10,5 @@ var app = express();
 var passport = passport();
 
 //Listening on port 3002
-app.listen(3002);
+app.listen(process.env.PORT || 3002);
 module.exports = app;
