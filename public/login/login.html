@@ -1,0 +1,24 @@
+﻿<div class="centered">
+    <div id="login" class="animate form">
+        <form name="loginForm"  autocomplete="on" style="padding-top:20px;" >
+            <h1><strong></strong>Please Login</h1>
+            
+            <p class="paragraph">
+                <input id="username" name="username" required="required" type="text" placeholder="Username" ng-model="vm.user.username"/>
+                <span  class="submit-error" ng-if="(loginForm.username.$dirty || vm.isSubmitted )&& (loginForm.username.$error.required)"><i><b>Username</b></i> is required.</span>
+            </p>
+            <p class="paragraph">
+                <input id="password" name="password" required="required" type="password" placeholder="Password" ng-model="vm.user.password"/>
+                <span  class="submit-error" ng-if="(loginForm.password.$dirty || vm.isSubmitted )&& (loginForm.password.$error.required)"><i><b>Password</b></i> is required.</span>
+            </p>
+            <p class="">
+                <span ng-if="vm.error" class="submit-error">{{vm.error}}.</span>
+            </p>
+            <p class="login button float-left">
+                <input type="button" value="{{vm.loginBtnText}}"  ng-click="vm.login(loginForm)"/>
+            </p>
+           
+            
+        </form>
+    </div>
+</div>
