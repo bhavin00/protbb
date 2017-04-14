@@ -1,5 +1,5 @@
 ﻿module.exports = {
-    host: 'db4free.net',
+    host: 'https://www.db4free.net/',
     port : 3306,
     dbname: "protb",
     dbusername: "bhavinpadiya",
